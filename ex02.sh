@@ -2,7 +2,9 @@
 
 echo ' O voo mais longo é:' 
 
-cat  data-aula-4  | cut -d, -f14 | sort -n -u | tail -1 $1
+
+cat data-aula-4 | sort  -n -t, -k14 | cut -d, -f10 | tail -1 $1
+
 
 
 
