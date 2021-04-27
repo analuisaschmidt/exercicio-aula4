@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cat data-aula-4 | cut -d, -f15 | grep -v -   > colunaex6.txt
+cat data-aula-4 | cut -d, -f9,15 | grep 'DL' | cut -d, -f2 | grep -v -   > colunaex6.txt
 
 echo 'vamos fazer o sum e vai dar certo: '
 
