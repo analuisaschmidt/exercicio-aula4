@@ -1,0 +1,1 @@
+cat data-aula-4 | sort -n -t, -k15,16 | cut -d, -f15,16 | grep --invert-match '\b-.' | grep --invert-match '\b.-.' >> agoravai.txt
